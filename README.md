@@ -51,6 +51,7 @@ PyMCを用い、波及構造を「地域」と「産業」の交差効果で分�
 * **PAPAIOS（環太平洋産業連関分析学会）** 第36回大会（2025年10月）
 * **第72回 土木計画学研究発表会**（2025年11月）
 * **ICES2026（13th International Conference on Economic Structures）** 発表予定（2026年3月, 学会発表終了後この部分のコードを追記予定）
+* →「土木学会論文集・特集号（土木計画学）」投稿に向けて準備中
 
 ## Technical Stack
 * **Language**: Python (pandas, NumPy, scikit-learn)
