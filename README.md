@@ -40,12 +40,12 @@
 * **Intuition**: 物理的な距離ではなく、波及の「ステップ数」を可視化。
 * **Insight**: 四国地域におけるサプライチェーンの効率化、あるいは結びつきの希薄化を定量的に捉えます。
 * **Localization Process**: 輸入除去処理を施した国産化行列の構築。 $$A_{domestic} = \text{diag}(d) A_{total}$$
-* **Hierarchical Bayesian Modeling**: PyMCを用い、波及構造を「地域」と「産業」の交差効果で分解して推定。
+### 2. **Hierarchical Bayesian Modeling**: PyMCを用い、波及構造を「地域」と「産業」の交差効果で分解して推定。
 
 ## Academic Presentations
 * **PAPAIOS（環太平洋産業連関分析学会）** 第36回大会（2025年10月）
 * **第72回 土木計画学研究発表会**（2025年11月）
-* **ICES2026（13th International Conference on Economic Structures）** 発表予定（2026年3月）
+* **ICES2026（13th International Conference on Economic Structures）** 発表予定（2026年3月, 学会発表終了後この部分のコードを追記予定）
 
 ## Technical Stack
 * **Language**: Python (pandas, NumPy, scikit-learn)
