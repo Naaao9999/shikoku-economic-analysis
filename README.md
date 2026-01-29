@@ -52,3 +52,6 @@ PyMCを用い、波及構造を「地域」と「産業」の交差効果で分�
 * **Language**: Python (pandas, NumPy, scikit-learn)
 * **Modeling**: PyMC (MCMC)
 * **GIS**: QGIS
+
+## 参考
+* **経済産業省「地域間産業連関表」**: [Python (pandas, NumPy, scikit-learn)](https://www.meti.go.jp/statistics/tyo/tiikiio/index.html)
