@@ -29,7 +29,10 @@
   取引金額の増減という表面的な指標ではなく、APL（平均波及距離）によって「サプライチェーンの深さ」そのものを抽出し、経済の変質を捉えています。
 
 ## Methodologies
-* **APL (Average Propagation Length)**: 産業間の経済的な距離（サプライチェーンのステップ数）を測定。
+### 1. APL (Average Propagation Length)
+産業間の「経済的な距離」を測定する指標です。ある部門への需要が、何段階（何部門）を経て対象部門に波及するかを算出します。
+* **Intuition**: 物理的な距離ではなく、波及の「ステップ数」を可視化。
+* **Insight**: 四国地域におけるサプライチェーンの効率化、あるいは結びつきの希薄化を定量的に捉えます。
 * **Localization Process**: 輸入除去処理を施した国産化行列の構築。 $$A_{domestic} = \text{diag}(d) A_{total}$$
 * **Hierarchical Bayesian Modeling**: PyMCを用い、波及構造を「地域」と「産業」の交差効果で分解して推定。
 
