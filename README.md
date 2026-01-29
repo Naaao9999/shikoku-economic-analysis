@@ -1,31 +1,44 @@
-# Interregional Economic Analysis of the Shikoku Region (1985–2005)
+# Shikoku Economic Analysis (1985–2005)
 
-## 概要
-本プロジェクトは、1985年から2005年にわたる「地域間産業連関表」を活用し、四国地域の経済構造の変化を多角的に分析した研究リポジトリです。
-経済理論（産業連関分析）と現代のデータサイエンス手法（階層ベイズモデル、機械学習）を融合させ、地域経済における波及効果や構造変化の定量化を試みています。
+## Project Overview
+1985年から2005年までの20年間、計5時点の地域間産業連関表を用いた四国地域の経済構造分析プロジェクトです。
+バブル経済から低成長期への移行という劇的な変化の中で、地域内の産業構造がどのように変容したのかを、経済理論とデータサイエンスの両面から定量化しています。
 
-## 研究の背景と成果
-* **研究対象**: 1985年〜2005年の地域間産業連関表を用いた四国経済の長期構造分析。
-* **主な手法**: 
-    * 輸入除去処理を施した国産化行列の構築。
-    * 平均波及距離（APL: Average Propagation Length）の算出による産業間結合強度の定量化。
-    * **PyMC** を用いた階層ベイズモデリングによる地域特性の要因分解。
-* **学術実績**:
-    * 環太平洋産業連関分析学会（PAPAIOS）全国大会（2025年10月）発表。
-    * 土木計画学研究発表会（2025年11月）発表 [cite: 53]。
-    * **ICES2026（国際学会）** にて可視化分析の結果を発表予定（2026年3月）。
+## Research Background & Novelty
+* **20年間にわたる長期時系列分析**
+  地域間産業連関表を用いた分析の多くは単一時点の断面的分析ですが、本研究では20年分の一貫した部門統合を行い、時系列での構造比較を実現しました。この規模の長期分析は、先行研究においても類を見ない取り組みです。
+* **産業間結合の質的評価**
+  単なる取引額の推移ではなく、後述するAPL（平均波及距離）を用いることで、産業間の「繋がり方」の変容を抽出しています。
+* **統計モデリングの導入**
+  決定論的な分析に留まらず、PyMCによる階層ベイズモデルを導入。地域固有の要因と全国的なトレンドを分離して推定しています。
 
-## 分析パイプライン (Analysis Pipeline)
-本リポジトリは、部分的な再検証や拡張が容易な構造となっています。
+## Methodologies
+### 1. APL (Average Propagation Length)
+産業間の「経済的な距離」を測定する指標です。ある部門への需要が、何段階（何部門）を経て対象部門に波及するかを算出します。
+* **Intuition**: 物理的な距離ではなく、波及の「ステップ数」を可視化。
+* **Insight**: 四国地域におけるサプライチェーンの効率化、あるいは結びつきの希薄化を定量的に捉えます。
 
-1.  **[01_Data_Integration]**: 部門統合およびデータクレンジング。
-2.  **[02_APL_Calculation]**: 自給率の算出および APL の計算。
-    * 数理モデル: $A_{domestic} = \text{diag}(d) A_{total}$
-3.  **[03_Bayesian_Modeling]**: PyMC による交差効果モデルの推定。
-4.  **[04_GIS_Visualization]**: 分析結果の空間的な図示（QGIS連携）。
+### 2. Localization Process
+地域外への経済漏出を考慮し、輸入（域外流入）を控除した国産化行列を構築。
+* **Model**: $$A_{domestic} = \text{diag}(d) A_{total}$$
+* 地域内での真の経済波及効果を測定するための必須工程として実装しています。
 
-## 技術スタック
+### 3. Hierarchical Bayesian Modeling
+PyMCを用い、地域間波及構造の要因分解を実施。
+
+## Analysis Pipeline
+1. **Data Preparation**: 1985-2005年の部門統合、統計データのクレンジング。
+2. **Structural Analysis**: 輸入除去処理およびAPLの算出。
+3. **Statistical Inference**: 階層ベイズモデルによるパラメータ推定。
+4. **Visualization**: 分析結果の空間的な図示（QGIS連携）。
+
+## Academic Presentations
+* **PAPAIOS（環太平洋産業連関分析学会）** 第36回大会（2025年10月）
+* **第72回 土木計画学研究発表会**（2025年11月）
+* **ICES2026（13th International Conference on Economic Structures）** 発表予定（2026年3月）
+
+## Technical Stack
 * **Language**: Python (pandas, NumPy, scikit-learn)
-* **Modeling**: PyMC (Hierarchical Bayesian Modeling)
-* **Visualization**: Matplotlib, QGIS
-* **Environment**: Google Colab
+* **Modeling**: PyMC
+* **GIS**: QGIS, Google Maps API
+* **Platform**: Google Colab
