@@ -86,7 +86,7 @@ APL（平均波及距離）を用いることで、単なる取引額ではな�
 これにより、特定の変化が「四国という場所」の固有要因なのか、あるいは「産業全体の構造的変化」なのかを確率的に判定します。
 
 **可視化例**
-<img width="784" height="584" alt="image" src="https://github.com/user-attachments/assets/4d069c2e-d439-4d2e-bda0-60d2b4d853c3" />
+> <img width="784" height="584" alt="image" src="https://github.com/user-attachments/assets/4d069c2e-d439-4d2e-bda0-60d2b4d853c3" />
 
 #### ③ 空間統計（GIS）を活用した動的可視化
 **GeoPandas** を用い、分析結果を日本地図上にマッピングします。
@@ -94,7 +94,7 @@ APL（平均波及距離）を用いることで、単なる取引額ではな�
 * **動的アニメーション**: `imageio` を用い、20年間のサプライチェーン変容を時系列GIFアニメーションとして出力します。地場産業の「空洞化」や「集積」のプロセスを視覚的に提示します。
 
 **可視化例**
-  <img width="1262" height="1234" alt="image" src="https://github.com/user-attachments/assets/3aa96fa0-54b0-4547-8619-3aedd8581178" />
+ > <img width="1262" height="1234" alt="image" src="https://github.com/user-attachments/assets/3aa96fa0-54b0-4547-8619-3aedd8581178" />
 
 ## What did we find?（詳細は公表する論文にて）
 * **全国的にAPLの長さ（＝サプライチェーンの長さ）は徐々に短縮している** →技術や交通の効率化の影響？
