@@ -24,7 +24,7 @@
 ### 地図データ（GeoJSON）
 以下のサイトから、都道府県境界のGeoJSONファイルを取得してください。
 * **Japonyol.net**: [47都道府県のGeoJSONデータ](https://japonyol.net/editor/article/47-prefectures-geojson.html)
-  * サイト内の「47都道府県のGeoJSONファイル」をダウンロードし、（必要に応じて）ファイル名を `prefectures.geojson` に変更して使用してください。
+  * サイト内の「47都道府県のGeoJSONファイル」をダウンロードし、ファイル名が `prefectures.geojson` になっていることを確認して（必要に応じて変更して）使用してください。
 
 ## 3. ディレクトリ構造
 ダウンロードしたファイルは、プロジェクトのルートディレクトリを基準として、以下の構造に従って配置してください。
