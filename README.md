@@ -96,6 +96,7 @@ APL（平均波及距離）を用いることで、単なる取引額ではな�
 
 **可視化例**
  > <img width="1262" height="1234" alt="image" src="https://github.com/user-attachments/assets/3aa96fa0-54b0-4547-8619-3aedd8581178" />
+「国土数値情報（行政区域データ）（国土交通省）（https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-v3_1.html）を加工して作成
 
 ## What did we find?（詳細は公表する予定の論文にて）
 * **全国的にAPLの長さ（＝サプライチェーンの長さ）は徐々に短縮している** →技術や交通の効率化の影響？
