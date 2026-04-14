@@ -109,7 +109,7 @@ APL（平均波及距離）を用いることで、単なる取引額ではな�
 
 ## Related Repository
 本研究系譜に関連するリポジトリとして、現在投稿中の論文に対応した以下の GitHub リポジトリがあります。
-- [shikoku_jes_structural_sharpening](https://github.com/Naaao9999/shikoku_jes_structural_sharpening)
+- [shikoku-structural-sharpening](https://github.com/Naaao9999/shikoku-structural-sharpening)
 - 
 この関連リポジトリは、四国地域の長期的構造変化という共通の問題意識を持ちながら、より伝統的な産業連関分析に関する分析手法を扱っています。
 
