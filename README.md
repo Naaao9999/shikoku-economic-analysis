@@ -107,6 +107,12 @@ APL（平均波及距離）を用いることで、単なる取引額ではな�
 * **2025年11月：第72回 土木計画学研究発表会**
 * →「土木学会論文集・特集号（土木計画学）」投稿に向けて準備中
 
+## Related Repository
+本研究系譜に関連するリポジトリとして、現在投稿中の論文に対応した以下の GitHub リポジトリがあります。
+- [shikoku_jes_structural_sharpening](https://github.com/Naaao9999/shikoku_jes_structural_sharpening)
+- 
+この関連リポジトリは、四国地域の長期的構造変化という共通の問題意識を持ちながら、より伝統的な産業連関分析に関する分析手法を扱っています。
+
 ## Technical Stack
 | Category | Tools & Libraries |
 | :--- | :--- |
